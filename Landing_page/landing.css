@@ -1,0 +1,122 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+video{
+   width: 100%; 
+   filter: brightness(0.5);
+   background-color: black;
+}
+.buttons{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    z-index:1;
+    color: white;
+    display: flex;
+}
+.buttons button{
+    border-color: aliceblue;
+    color:azure;
+    background:transparent;
+    padding: 10px;
+    margin: 15px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-weight: bolder;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.buttons button:hover {
+    background:crimson;
+}
+.logo{
+    position: absolute;
+    top: 30px;
+    left: 210px;
+    z-index:1;
+    display: flex;
+    padding: 50px;
+}
+.logo img{
+    margin-top: 50px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+.logo h1{
+    background: linear-gradient(to top,red,yellow);
+    -webkit-background-clip: text; 
+    color: transparent;
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.moveimage {
+    width: 500px; /* Adjust width as needed */
+    position: fixed;
+    right: 0;
+    top: calc(100vh - 100px); /* Adjust the distance from the top */
+    overflow: hidden;
+    animation: scroll 50s linear infinite; /* Apply animation to move all images */
+    margin-right: -80px;
+
+}
+.imagemove {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    
+}
+.image img {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 200px;
+    width: 400px;
+    margin-top: 20px; 
+    transition: transform 0.5s ease;
+}
+@keyframes scroll {
+    0% { transform: translateY(0); } /* Start from the bottom */
+    100% { transform: translateY(-100%); } /* End at the top */
+}
+.image img:hover{
+    transform: scale(1.1);
+}
+
+.quote{
+    width: 800px;
+    position: absolute;
+    z-index: 1;
+    top: 33%;
+    left: 9%;
+}
+.quote p{
+    color:white;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1.2;
+}
+.start{
+    position: absolute;;
+    z-index: 1;
+    bottom: 18%;
+    left: 27%;
+}
+.start button{
+    color: black;
+    padding: 10px;
+    border-radius: 30px;
+    background-color:moccasin;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.start button:hover{
+    background-color: goldenrod;
+}

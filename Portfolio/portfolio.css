@@ -1,0 +1,186 @@
+body{
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzgtMDkteC5qcGc.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+header{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-variant: small-caps;    
+}
+header h1{
+    background: linear-gradient(to top,lightskyblue,aquamarine);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+header h3{
+    background: linear-gradient(to top,bisque,darkgoldenrod);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.about{
+    display: flex;
+}
+.about img{
+    height: 350px;
+    max-width: 100%;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 150px;
+    border-radius: 50px;
+
+}
+.about h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.skills{
+    text-align: center;
+    display: flex;
+    color: black;
+    margin-top:70px;
+    margin-left:200px;
+}
+.Technical{
+    background-image: url('https://files.123freevectors.com/wp-content/original/157844-white-and-gold-background-graphic.jpg');
+    background-size: cover;
+    height:300px;
+    width:250px;
+    border-radius: 15px;
+    overflow:hidden;
+    opacity: 0; 
+    animation: slideIn 1.5s ease-out forwards;
+}
+.Technology{
+    background-image: url('https://files.123freevectors.com/wp-content/original/157844-white-and-gold-background-graphic.jpg');
+    background-size: cover;
+    height:300px;
+    width:250px;
+    margin-left:200px;
+    border-radius: 15px;
+    overflow:hidden;
+    opacity: 0; 
+    animation: slideIn 1.5s ease-out forwards;
+}
+.Technical h2, .Technology h2{
+    color: black;
+    font-size: 30px;
+}
+.Technical ul, .Technology ul{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:maroon;
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.animated {
+    animation: fadeIn 1s ease-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.projects h3{
+    text-align: center;
+    font-size: 40px;
+    color:hotpink;
+    padding-top: 40px;
+}
+.projects h2{
+    text-align: center;
+    font-size: 40px;
+    color: yellow;
+    padding-top: 40px;
+}
+.pro1,.pro2,.pro3{
+    display: flex;
+}
+
+.pro1 h5, .pro2 h5, .pro3 h5{
+    padding: 20px;
+    font-weight: normal;
+    text-align: justify;
+    flex: 1;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pro1 img, .pro2 img, .pro3 img{
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.resume{
+    display: flex;
+    margin-left: 100px;
+}
+.resume h4{
+    font-size:40px;
+    color: hotpink;
+}
+.resume a{
+    margin-top: 60px;
+    color: white;
+    font-size:30px;
+}
+.contact{
+    margin-left: 70px;
+    font-size:30px;
+}
+.contact h2{
+    font-size:40px;
+    color: hotpink;
+}
+.inf{
+    margin-left: 100px;
+}
+.inf img{
+    opacity: 0.9;
+    height: 50px;
+    width: 50px;
+}
+.item{
+    color: white;
+    display: flex;
+}
+.item p{
+    margin-top: 10px;
+    padding-left: 30px;
+    font-size: 25px;
+}
+.footer {
+    font-size: 20px;
+    padding: 0px;
+    background-color:white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    margin-top: 10px;
+}
+
+.footer-content img {
+    width: 30px;
+    margin: 0 5px;
+}
+
